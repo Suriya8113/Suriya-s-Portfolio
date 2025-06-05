@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Suriya Ilangovan Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+</head>
+<body>
+     <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Suriya Ilangovan</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#projects">Projects</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#contact">Contact Me</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="openMenu()"></i>
+        </div>
+        <div class="dropdown" id="dropdown">
+            <div class="links">
+                <a href="#home" onclick="closeMenu()">Home</a>
+                <a href="#about" onclick="closeMenu()">About</a>
+                <a href="#skills" onclick="closeMenu()">Skills</a>
+                <a href="#projects" onclick="closeMenu()">Projects</a>
+                <a href="#contact" onclick="closeMenu()">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="closeMenu()"></i>
+            </div>
+        </div>
+        <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+    </nav>
+
+    <section id="home">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="images/suriya.jpg" alt="Suriya" />
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Suriya</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a Front-End developer <span class="typewriter-text"></span></div>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">I'm a passionate Front-End developer with expertise in creating modern, responsive websites. I love turning ideas into reality through clean code and creative design.</p>
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <a href="https://github.com" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <button onclick="downloadCV()">Download CV</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="About">
+        <div class="about-container" data-aos="fade-up" data-aos-duration="1000">
+            <h2>About Me</h2>
+            <p>I'm Suriya, a dedicated Front-End developer with a passion for crafting user-friendly and visually appealing websites. With a strong foundation in HTML, CSS, JavaScript, and modern frameworks, I strive to deliver high-quality solutions that meet client needs. When I'm not coding, you can find me exploring new technologies or sipping coffee!</p>
+            <div class="about-stats">
+                <div class="stat" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
+                    <h3>4+ Technologies</h3>
+                    <p>Proficient in HTML, CSS, JavaScript, and React — building modern, dynamic UIs.</p>
+                </div>
+                <div class="stat" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300">
+                    <h3>Responsive Designs</h3>
+                    <p>Skilled in building mobile-first, responsive websites that look great on all devices.</p>
+                </div>
+                <div class="stat" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="400">
+                    <h3>Passion for Learning</h3>
+                    <p>Always exploring new tools, frameworks, and best practices to level up my skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="Skills">
+        <div class="skills-container" data-aos="fade-up" data-aos-duration="1000">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
+                    <i class="fa-brands fa-react"></i>
+                    <h3>React</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="projects" class="Projects">
+        <div class="projects-container" data-aos="fade-up" data-aos-duration="1000">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+                    <img src="images/Screenshot 2025-06-05 112042.png" alt="Express Cafe">
+                    <div class="project-info">
+                        <h3>Express Cafe</h3>
+                        <p>A responsive e-commerce website built with HTML, CSS, and JavaScript.</p>
+                        <a href="https://suriya8113.github.io/ExpressCafe/" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                    <img src="images/portfolio.png" alt="Dashboard">
+                    <div class="project-info">
+                        <h3>Dashboard</h3>
+                        <p>A personal portfolio showcasing modern web design techniques with smooth animations.</p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                    <img src="images/task-app.png" alt="Weather App">
+                    <div class="project-info">
+                        <h3>Weather App</h3>
+                        <p>A Weather App built with HTML, CSS, and JavaScript offering real-time Weather tracking using API.</p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="contact">
+        <div class="container">
+            <h1>Contact Me</h1>
+            <div class="underline"></div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>kisuriyaa@gmail.com</p>
+                    <p>+91 7539976630</p>
+                    <div class="social-links">
+                        <a href="https://github.com" ><i class="fa-brands fa-github"></i></a>
+                        <a href="https://instagram.com" ><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://facebook.com" ><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="/submit" method="POST">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        AOS.init({ offset: 30 });
+      
+        function openMenu() {
+            document.getElementById("dropdown").classList.add("active");
+            document.getElementById("overlay").classList.add("active");
+            document.body.style.overflow = "hidden";
+        }
+        function closeMenu() {
+            document.getElementById("dropdown").classList.remove("active");
+            document.getElementById("overlay").classList.remove("active");
+            document.body.style.overflow = "";
+        }
+        function downloadCV() {
+            const link = document.createElement("a");
+            link.href = "Suriya_CV.pdf";
+            link.download = "Suriya_CV.pdf";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+      
+        
+    </script>
+</body>
+</html>
